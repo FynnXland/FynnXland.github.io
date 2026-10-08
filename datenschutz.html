@@ -32,7 +32,12 @@
     <li><code>youtube.force-ssl</code>: bei eigenen, bereits hochgeladenen Videos Titel, Beschreibung, Tags, Thumbnail, Untertitel und Veröffentlichungstermin setzen – nur nach ausdrücklicher Bestätigung im Werkzeug. Es werden keine Videos gelöscht.</li>
   </ul>
   <h3>Speicherung</h3>
-  <p>Antworten der API werden nur kurz im Arbeitsspeicher zwischengespeichert (höchstens 15 Minuten). Dauerhaft auf dem eigenen Rechner gespeichert werden nur die Video-ID und der Veröffentlichungsstand der eigenen Videos sowie das Anmelde-Token. Es gibt keinen Server und keine Cloud-Speicherung.</p>
+  <p>Antworten der API werden für die Anzeige nur kurz im Arbeitsspeicher zwischengespeichert (höchstens 15 Minuten). Auf dem eigenen Rechner gespeichert werden:</p>
+  <ul>
+    <li>die Video-ID und der Veröffentlichungsstand der eigenen Videos sowie das Anmelde-Token,</li>
+    <li>für die Auswertung der eigenen Videos <strong>zusammengefasste Kanalstatistiken</strong> (z. B. Aufrufe, Wiedergabezeit, Zuschauerbindung im Verlauf eines Videos, Herkunft der Aufrufe). Sie enthalten keine Daten einzelner Zuschauerinnen und Zuschauer, werden unverändert abgelegt, nur intern genutzt, um die eigenen Videos zu verbessern, und <strong>nach spätestens 12 Monaten automatisch gelöscht</strong>.</li>
+  </ul>
+  <p>Daten anderer Kanäle werden nicht gespeichert. Es gibt keinen Server und keine Cloud-Speicherung.</p>
   <h3>Keine Weitergabe</h3>
   <p>Daten aus den Google-APIs werden nicht an Dritte weitergegeben, nicht verkauft, nicht für Werbung und nicht zum Training von KI-Modellen verwendet. Die Nutzung und Weitergabe von Informationen, die „Tokenweise Upload“ von Google-APIs erhält, entspricht der <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, einschließlich der Anforderungen zur eingeschränkten Nutzung („Limited Use“).</p>
   <h3>Zugriff widerrufen</h3>
@@ -55,7 +60,7 @@
       <li><code>yt-analytics.readonly</code> – reads aggregated statistics of the own channel.</li>
       <li><code>youtube.force-ssl</code> – sets title, description, tags, thumbnail, captions and schedule of the owner's own already uploaded videos, only after explicit confirmation. It never deletes videos.</li>
     </ul>
-    <p>API responses are cached in memory for at most 15 minutes. Only video IDs, publishing status and the OAuth token are stored locally on the owner's computer. No data is shared with third parties, sold, used for advertising or used to train AI models.</p>
+    <p>API responses are cached in memory for at most 15 minutes for display. Stored locally on the owner's computer are video IDs, publishing status, the OAuth token and, for improving the owner's own videos, aggregated channel statistics (e.g. views, watch time, audience retention, traffic sources). These contain no data about individual viewers, are used internally only and are deleted automatically after 12 months at the latest. No data about other channels is stored. No data is shared with third parties, sold, used for advertising or used to train AI models.</p>
     <p>Tokenweise Upload's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
     <p>Access can be revoked at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. See also the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
   </div>
